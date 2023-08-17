@@ -1,10 +1,14 @@
 @import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     --clr-primary:  #EE8B8B;
     --clr-secondary:#CE9898;
     --clr-primary-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
     --clr-dark:#423A3A;
     --clr-light:#FFFFFF;
+    --clr-light-gradient: linear-gradient(28deg, #FFF1F1 0%, #FFFFFF 100%);
 
 
 
@@ -17,9 +21,44 @@
 .left-side {
     /*whenever your growing, the flex basis should be zero */
     flex: 2 0 0;
-    background: var(--clr-primary-gradient);
+    background: var(--clr-light-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px;
 }
 
+.left-side-inner {
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:133px;
+
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h1 {
+    text-transform: uppercase;
+}
+
+
 .right-side {
-flex: 1 0 0;
+/*flex: 1 0 0;*/
+    height: 100vh;
+    aspect-ratio: 610/800;
+    background-image: url("/img/main-model.jpg");
+    background-size: cover;
+    background-position: center;
 }
