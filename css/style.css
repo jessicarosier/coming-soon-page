@@ -120,7 +120,7 @@ label {
 /*flex: 1 0 0;*/
     height: 100vh;
     aspect-ratio: 610/800;
-    background-image: url("/img/main-model.jpg");
+    background-image: url("../img/main-model.jpg");
     background-size: cover;
     background-position: center;
 }
