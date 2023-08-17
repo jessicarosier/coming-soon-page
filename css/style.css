@@ -1,2 +1,25 @@
 @import "reset.css";
+:root {
+    --clr-primary:  #EE8B8B;
+    --clr-secondary:#CE9898;
+    --clr-primary-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    --clr-dark:#423A3A;
+    --clr-light:#FFFFFF;
 
+
+
+}
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    /*whenever your growing, the flex basis should be zero */
+    flex: 2 0 0;
+    background: var(--clr-primary-gradient);
+}
+
+.right-side {
+flex: 1 0 0;
+}
